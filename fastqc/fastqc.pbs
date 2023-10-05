@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -l walltime=5:00:00,select=1:ncpus=12:mem=64gb
+#PBS -A st-singha53-1
+#PBS -N fastqc
+#PBS -M rishikad@student.ubc.ca
+#PBS -o ofastqc.txt
+#PBS -e efastqc.txt
+  
+#############################################################################
+
+module load apptainer
+
+DATA = /arc/project/st-singha53-1/rishikad/SingleCell/Singh/230104_VH00387_317_AACFCYKM5/SC230104fastqs/outs/fastq_path/SC127
+
+#Change to working directory 
+cd $PBS_O_WORKDIR
+apptainer run -B $DATA /project/st-singha53-1/rishikad/scrnaseq/fastqc/scrnaseq make sockeye_fastqc
