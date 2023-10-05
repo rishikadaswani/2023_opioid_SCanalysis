@@ -1,0 +1,25 @@
+---
+title: "sequencing-raw-data.Rmd"
+output: html_document
+date: "2023-09-16"
+---
+
+# Sequencing Raw Data 
+
+## Class Environment 
+
+### Getting into Sockeye ARC 
+
+```{bash, eval = FALSE}
+## Example 
+
+ssh cwl_id@sockeye.arc.ubc.ca 
+```
+
+### Viewing FASTQ Files 
+
+#### Viewing entire file 
+```{bash}
+cat data/example_fastq.fastq
+```
+

@@ -1,0 +1,14 @@
+.DS_Store
+.Rproj.user
+scrnaseq.html
+scrnaseq_files
+.Rhistory
+data/
+fastqc_results/
+fastqc/scrnaseq
+**.zip
+**.html
+**.sif 
+e*.txt
+o*.txt
+
