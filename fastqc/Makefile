@@ -18,7 +18,7 @@ fastqc:
 	
 sockeye_pull:
 	module load singularity; \
-	singularity pull --name scrnaseq docker://$(DOCKERHUB_USERNAME)/$(IMAGE_NAME):$(IMAGE_VERSION)
+	singularity pull --name snrnaseq docker://$(DOCKERHUB_USERNAME)/$(IMAGE_NAME):$(IMAGE_VERSION)
 
 sockeye_fastqc:
 	sh fastqc.sh /project/st-singha53-1/datasets/fentanyl/scrnaseq
